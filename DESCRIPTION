@@ -1,14 +1,14 @@
 Package: cmd
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Unix Pipes for Data Pre-processing in R
 Version: 0.1
 Date: 2015-09-25
-Author: Who wrote it
-Maintainer: Who to complain to <yourfault@somewhere.net>
-Description: More about what it does (maybe more than one line)
+Author: Tommy M O'Dell
+Maintainer: Tommy M O'Dell <tommy.odell@gmail.com>
+Description: Makes it easy to process large (or many) files in R that may be too large to fit into memory
 Imports:
   magrittr
 Depends:
   magrittr
-License: What license is it under?
+License: GPL-3
 LazyData: TRUE
