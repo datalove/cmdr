@@ -2,6 +2,9 @@
 
 export("%|%")
 export(cmd)
+export(cmd_cat)
+export(cmd_exec)
+export(cmd_find)
 export(cmd_grep)
 export(cmd_head)
 export(cmd_tail)

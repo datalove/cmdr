@@ -1,4 +1,4 @@
-Package: cmd
+Package: cmdr
 Type: Package
 Title: Unix Pipes for Data Pre-processing in R
 Version: 0.1

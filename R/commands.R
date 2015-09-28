@@ -30,7 +30,7 @@ cmd_find <- function(x) {
 
 #' @export
 cmd_cat <- function(input, files) {
-  cat %p%
+  cat %p% files
 }
 
 
