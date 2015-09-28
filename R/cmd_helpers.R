@@ -2,8 +2,6 @@
 #'@export
 `%|%` <- function(x,y) paste(x, '|', y)
 
-# `%>%` <- function(x,y) paste(x, '>', y)
-
 #' @export
 to_r <- function(x) {
   message(x)
