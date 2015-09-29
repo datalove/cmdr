@@ -20,7 +20,7 @@ cmd_head <- function(input, n) {
 
 #' @export
 cmd_tail <- function(input, n) {
-  input %|% 'tail' %p% v('n') %p% sprintf('%d', n)
+  input %|% 'tail' %p% sv('n', sprintf('%d', n))
 }
 
 #' @export
