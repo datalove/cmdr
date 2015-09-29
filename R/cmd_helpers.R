@@ -1,17 +1,26 @@
 
-#'@export
-`%|%` <- function(x,y) paste(x, '|', y)
 
-#' @export
-to_r <- function(x) {
-  message(x)
-  system(x, intern = TRUE)
+`%|%` <- function(x,y) {
+  if(is.null(x))
+    y
+  else
+    paste(x, '|', y)
+    
+}
+
+update_cmd <- function(cmd_str, input) {
+  input$cmd_str <- get_cmd(input) %|% cmd_str
+  input
 }
 
 #' @export
-to_disk <- function(x, file_path) {
-  command <- paste(x, '>', q(file_path))
-  message(command)
-  system(command)
-  file_path
+get_cmd <- function(input) input$cmd_str
+
+#' @export
+get_files <- function(x) {
+  if(is.null(x$cmd_str))
+    v(x$get_files)
+  else
+    NULL
 }
+
