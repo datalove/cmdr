@@ -19,7 +19,7 @@ get_cmd <- function(input) input$cmd_str
 #' @export
 get_files <- function(x) {
   if(is.null(x$cmd_str))
-    v(x$get_files)
+    v(x$files)
   else
     NULL
 }
